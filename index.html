@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue js examples</title>
+	<link rel="stylesheet" href="./bootstrap.css">
+</head>
+<body>
+
+	<div class="container">
+		<div id="tasks">
+			<div class="col-sm-4 col-sm-offset-3">
+				
+				<h1>Two way binding with Vue.js</h1>
+
+				<div id="demoTag">
+					
+					<div class="form-group">
+						<input type="text" 
+							   v-model="name" 
+							   placeholder="I need to..." 
+							   class="form-control"
+							   number
+						>
+					</div>
+
+					<pre>
+						{{ $data | json }}
+					</pre>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+	
+	<script src="vue.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
